@@ -23,11 +23,11 @@ The data downloading scripts are taken from the [Official Implementation](https:
 The feature loss network is trained on 2 datasets - Acoustic Scene Classification and Domestic Audio Tagging
 ### Feature Loss Network Files ###
 
-train_featurelossnet.py - This trains the featureloss network (or decoder network) on both the tasks and also calculates the validation scores for both of these.
+* train_featurelossnet.py - This trains the featureloss network (or decoder network) on both the tasks and also calculates the validation scores for both of these.
 
 					USAGE : python train_featurelossnet.py -o models
 
-The model is saved inside the "models" folder with name "loss_model.pth"
+   The model is saved inside the "models" folder with name "loss_model.pth"
 
 
 
@@ -37,21 +37,21 @@ The speech denoising network is trained on Voice Bank Corpus Dataset.
 
 ### Speech Denoising Network Files ###
 
-train_denoisingnet.py - This trains the denoising network (or encoder network) on Voice Bank Corpus training dataset and also calculates the validation scores on the validation dataset. It takes the loss network trained earlier as an argument.
+* train_denoisingnet.py - This trains the denoising network (or encoder network) on Voice Bank Corpus training dataset and also calculates the validation scores on the validation dataset. It takes the loss network trained earlier as an argument.
 						
 					USAGE : python train_denoisingnet.py -d dataset -l models/loss_model.pth -s models
 
-The model is saved inside the "models" folder with name "denoising_model.pth". Specify the loss model path in -l option.
+   The model is saved inside the "models" folder with name "denoising_model.pth". Specify the loss model path in -l option.
 
 
-test_denosingnet.py - This test the denoising network on any noisy audios. It takes as input, the input data folder that should contain all the audios that we wish to denoise.
+* test_denosingnet.py - This test the denoising network on any noisy audios. It takes as input, the input data folder that should contain all the audios that we wish to denoise.
 
 					USAGE : test_denoisingnet.py -d data_folder -m denoising_model_path
 
-data_folder - folder containing all the noisy audios
-denoising_model_path - path for our denoised network model (encoder model).
+   data_folder - folder containing all the noisy audios   
+   denoising_model_path - path for our denoised network model (encoder model).  
 
-The denoised audios will get saved on the same location as the input data folder. (dataFolder_denoised folder will get created).
+   The denoised audios will get saved on the same location as the input data folder. (dataFolder_denoised folder will get created).
 
 
 models.py - Contains the architecture of both the encoder and the decoder.
