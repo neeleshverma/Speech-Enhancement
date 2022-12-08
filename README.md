@@ -55,3 +55,5 @@ The denoised audios will get saved on the same location as the input data folder
 
 
 models.py - Contains the architecture of both the encoder and the decoder.
+
+Contact Info : neeleshverma13@gmail.com
