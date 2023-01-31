@@ -46,7 +46,7 @@ The speech denoising network is trained on Voice Bank Corpus Dataset.
 
 * test_denosingnet.py - This test the denoising network on any noisy audios. It takes as input, the input data folder that should contain all the audios that we wish to denoise.
 
-			USAGE : test_denoisingnet.py -d data_folder -m denoising_model_path
+			USAGE : python test_denoisingnet.py -d data_folder -m denoising_model_path
 
    data_folder - folder containing all the noisy audios   
    denoising_model_path - path for our denoised network model (encoder model).  
