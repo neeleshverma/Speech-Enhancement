@@ -39,14 +39,14 @@ The speech denoising network is trained on Voice Bank Corpus Dataset.
 
 * train_denoisingnet.py - This trains the denoising network (or encoder network) on Voice Bank Corpus training dataset and also calculates the validation scores on the validation dataset. It takes the loss network trained earlier as an argument.
 						
-					USAGE : python train_denoisingnet.py -d dataset -l models/loss_model.pth -s models
+			USAGE : python train_denoisingnet.py -d dataset -l models/loss_model.pth -s models
 
    The model is saved inside the "models" folder with name "denoising_model.pth". Specify the loss model path in -l option.
 
 
 * test_denosingnet.py - This test the denoising network on any noisy audios. It takes as input, the input data folder that should contain all the audios that we wish to denoise.
 
-					USAGE : test_denoisingnet.py -d data_folder -m denoising_model_path
+			USAGE : test_denoisingnet.py -d data_folder -m denoising_model_path
 
    data_folder - folder containing all the noisy audios   
    denoising_model_path - path for our denoised network model (encoder model).  
