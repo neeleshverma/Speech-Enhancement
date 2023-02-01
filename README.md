@@ -51,7 +51,7 @@ The speech denoising network is trained on Voice Bank Corpus Dataset.
    data_folder - folder containing all the noisy audios   
    denoising_model_path - path for our denoised network model (encoder model).  
 
-   The denoised audios will get saved on the same location as the input data folder. (dataFolder_denoised folder will get created).
+   The denoised audios will get saved on the same location as the input data folder. ($data_folder_denoised folder will get created).
 
 
 models.py - Contains the architecture of both the encoder and the decoder.
