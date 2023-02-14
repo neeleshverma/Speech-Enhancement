@@ -1,6 +1,6 @@
 # Speech Denoising Using Deep Feature Losses
 
-This project is inspired from the paper [Speech Denoising with Deep Feature Losses](https://arxiv.org/pdf/1806.10522.pdf) in PyTorch. It gives an end-to-end deep learning approach to denoise speech signals.
+This project is inspired from the paper [Speech Denoising with Deep Feature Losses](https://arxiv.org/pdf/1806.10522.pdf). It gives an end-to-end deep learning approach to denoise speech signals. We have used PyTorch framework.
 
 ## DATA DOWNLOADING FILES: ##
 
