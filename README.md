@@ -1,6 +1,6 @@
-# End-to-End Speech Denoising With Perceptual Feature Losses
+# End-to-End Speech Enhancement With Perceptual Feature Losses
 
-This project is inspired from the paper [Speech Denoising with Deep Feature Losses](https://arxiv.org/pdf/1806.10522.pdf). It gives an end-to-end deep learning approach to denoise speech signals. We have used PyTorch framework.
+An end-to-end encoder-decoder-based architecture for speech denoising using perceptual feature differences as a loss function (using PyTorch framework).
 
 ## DATA DOWNLOADING FILES: ##
 
