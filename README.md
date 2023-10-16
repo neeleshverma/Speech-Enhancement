@@ -4,7 +4,7 @@ An end-to-end encoder-decoder-based architecture for speech denoising using perc
 
 ## DATA DOWNLOADING FILES: ##
 
-The data downloading scripts are taken from the [Official Implementation](https://github.com/francoisgermain/SpeechDenoisingWithDeepFeatureLosses). 
+The data downloading scripts are taken from the [here](https://github.com/francoisgermain/SpeechDenoisingWithDeepFeatureLosses). 
 
 **1.)** **preprocess_lossdata.sh** - This script downloads all the (Acoustic Scene Dataset and Domestic Audio Tagging) data, resamples it to 16 kHz and the entire data is saved inside dataset/asc and dataset/dat. This dataset is used for training of the loss network.
 
