@@ -4,8 +4,6 @@ An end-to-end deep neural network for speech denoising using perceptual feature 
 
 ## DATA DOWNLOADING FILES: ##
 
-The data downloading scripts are taken from the [here](https://github.com/francoisgermain/SpeechDenoisingWithDeepFeatureLosses). 
-
 **1.)** **preprocess_lossdata.sh** - This script downloads all the (Acoustic Scene Dataset and Domestic Audio Tagging) data, resamples it to 16 kHz and the entire data is saved inside dataset/asc and dataset/dat. This dataset is used for training of the loss network.
 
 					USAGE : ./preprocess_lossdata.sh
