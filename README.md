@@ -1,6 +1,6 @@
 # End-to-End Speech Enhancement With Perceptual Feature Losses
 
-An end-to-end deep neural network for speech denoising using perceptual feature differences as a loss function (using PyTorch framework).
+An end-to-end deep neural network for speech denoising using perceptual feature differences as a loss function (using PyTorch framework). The detailed report is available here - [Report](https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/Report.pdf)
 
 ## DATA DOWNLOADING FILES: ##
 
