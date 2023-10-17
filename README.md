@@ -1,6 +1,6 @@
 # End-to-End Speech Enhancement With Perceptual Feature Losses
 
-An end-to-end encoder-decoder-based architecture for speech denoising using perceptual feature differences as a loss function (using PyTorch framework).
+An end-to-end deep neural network for speech denoising using perceptual feature differences as a loss function (using PyTorch framework).
 
 ## DATA DOWNLOADING FILES: ##
 
@@ -20,7 +20,11 @@ The data downloading scripts are taken from the [here](https://github.com/franco
 
 ## TRAINING FEATURE LOSS NETWORK ##
 
-The feature loss network is trained on 2 datasets - Acoustic Scene Classification and Domestic Audio Tagging
+The feature loss network is trained on 2 datasets - Acoustic Scene Classification and Domestic Audio Tagging. 
+The network architecture is shown below - 
+
+![Feature Loss Network](https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/feature_loss_net.png)
+
 ### Feature Loss Network Files ###
 
 * train_featurelossnet.py - This trains the featureloss network (or decoder network) on both the tasks and also calculates the validation scores for both of these.
@@ -33,7 +37,10 @@ The feature loss network is trained on 2 datasets - Acoustic Scene Classificatio
 
 ## TRAINING SPEECH DENOISING NETWORK ## 
 
-The speech denoising network is trained on Voice Bank Corpus Dataset.
+The speech-denoising network is trained on the Voice Bank Corpus Dataset.  
+The network architecture is shown below - 
+
+![Denoising Network](https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/denoising_net.png)
 
 ### Speech Denoising Network Files ###
 
