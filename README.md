@@ -23,7 +23,9 @@ The data downloading scripts are taken from the [here](https://github.com/franco
 The feature loss network is trained on 2 datasets - Acoustic Scene Classification and Domestic Audio Tagging. 
 The network architecture is shown below - 
 
-![Feature Loss Network](https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/feature_loss_net.png)
+<a href="url"><img src="https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/feature_loss_net.png" align="center" height="280" width="700" class="center">
+</a>  
+
 
 ### Feature Loss Network Files ###
 
@@ -40,7 +42,9 @@ The network architecture is shown below -
 The speech-denoising network is trained on the Voice Bank Corpus Dataset.  
 The network architecture is shown below - 
 
-![Denoising Network](https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/denoising_net.png)
+<a href="url"><img src="https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/denoising_net.png" align="center" height="280" width="800" >
+</a>  
+
 
 ### Speech Denoising Network Files ###
 
