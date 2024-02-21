@@ -21,7 +21,7 @@ An end-to-end deep neural network for speech denoising using perceptual feature 
 The feature loss network is trained on 2 datasets - Acoustic Scene Classification and Domestic Audio Tagging. 
 The network architecture is shown below - 
 
-<a href="url"><img src="https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/feature_loss_net.png" align="center" height="280" width="700" class="center">
+<a href="https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/feature_loss_net.png"><img src="https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/feature_loss_net.png" align="center" height="280" width="700" class="center">
 </a>  
 
 
@@ -40,7 +40,7 @@ The network architecture is shown below -
 The speech-denoising network is trained on the Voice Bank Corpus Dataset.  
 The network architecture is shown below - 
 
-<a href="url"><img src="https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/denoising_net.png" align="center" height="280" width="800" >
+<a href="https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/denoising_net.png"><img src="https://github.com/neeleshverma/Speech-Enhancement/blob/main/report_and_figs/denoising_net.png" align="center" height="280" width="800" >
 </a>  
 
 
