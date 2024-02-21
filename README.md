@@ -4,11 +4,11 @@ An end-to-end deep neural network for speech denoising using perceptual feature 
 
 ## DATA DOWNLOADING FILES: ##
 
-**1.)** **preprocess_lossdata.sh** - This script downloads all the (Acoustic Scene Dataset and Domestic Audio Tagging) data, resamples it to 16 kHz and the entire data is saved inside dataset/asc and dataset/dat. This dataset is used for training of the loss network.
+**1.)** **preprocess_lossdata.sh** - This script downloads all the (Acoustic Scene Dataset and Domestic Audio Tagging) data, resamples it to 16 kHz, and the entire data is saved inside dataset/asc and dataset/dat. This dataset is used for training of the loss network.
 
 					USAGE : ./preprocess_lossdata.sh
 
-**2.)** **preprocess_denoisingdata.sh** - It downloads the Voice Bank Corpus Dataset and resamples all the files to 16 kHz. It will create 4 new folders inside dataset folder (clean training set, noisy training set, clean validation set and noisy validation set) - 
+**2.)** **preprocess_denoisingdata.sh** - It downloads the Voice Bank Corpus Dataset and resamples all the files to 16 kHz. It will create 4 new folders inside the dataset folder (clean training set, noisy training set, clean validation set, and noisy validation set) - 
 1) trainset_clean
 2) trainset_noisy
 3) valset_clean
@@ -27,11 +27,11 @@ The network architecture is shown below -
 
 ### Feature Loss Network Files ###
 
-* train_featurelossnet.py - This trains the featureloss network (or decoder network) on both the tasks and also calculates the validation scores for both of these.
+* train_featurelossnet.py - This trains the featureloss network (or decoder network) on both tasks and also calculates the validation scores for both of these.
 
 					USAGE : python train_featurelossnet.py -o models
 
-   The model is saved inside the "models" folder with name "loss_model.pth"
+   The model is saved inside the "models" folder with the name "loss_model.pth"
 
 
 
@@ -46,21 +46,21 @@ The network architecture is shown below -
 
 ### Speech Denoising Network Files ###
 
-* train_denoisingnet.py - This trains the denoising network (or encoder network) on Voice Bank Corpus training dataset and also calculates the validation scores on the validation dataset. It takes the loss network trained earlier as an argument.
+* train_denoisingnet.py - This trains the denoising network (or encoder network) on the Voice Bank Corpus training dataset and also calculates the validation scores on the validation dataset. It takes the loss network trained earlier as an argument.
 						
 			USAGE : python train_denoisingnet.py -d dataset -l models/loss_model.pth -s models
 
-   The model is saved inside the "models" folder with name "denoising_model.pth". Specify the loss model path in -l option.
+   The model is saved inside the "models" folder with the name "denoising_model.pth". Specify the loss model path in the -l option.
 
 
-* test_denosingnet.py - This test the denoising network on any noisy audios. It takes as input, the input data folder that should contain all the audios that we wish to denoise.
+* test_denosingnet.py - This tests the denoising network on any noisy audio. It takes as input, the input data folder that should contain all the audios that we wish to denoise.
 
 			USAGE : python test_denoisingnet.py -d data_folder -m denoising_model_path
 
-   data_folder - folder containing all the noisy audios   
+   data_folder - folder containing all the noisy audio   
    denoising_model_path - path for our denoised network model (encoder model).  
 
-   The denoised audios will get saved on the same location as the input data folder. ($(data_folder)_denoised folder will get created).
+   The denoised audio will be saved in the same location as the input data folder. ($(data_folder)_denoised folder will get created).
 
 
 models.py - Contains the architecture of both the encoder and the decoder.
