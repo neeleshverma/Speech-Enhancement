@@ -70,7 +70,7 @@ models.py - Contains the architecture of both the encoder and the decoder.
 
 
 
-https://user-images.githubusercontent.com/39479994/215962178-ac55e72c-e13f-4264-9fd2-9820c52bbc83.mp4
+https://user-images.githubusercontent.com/39479994/215962178-ac55e72c-e13f-4264-9fd2-9820c52bbc83.mp4  
 
 
 #### Clean Audio 1
@@ -92,6 +92,8 @@ https://user-images.githubusercontent.com/39479994/215962270-7f055176-6e59-4b01-
 https://user-images.githubusercontent.com/39479994/215962320-79e5c43d-b30b-40a4-a650-f6394ffc3063.mp4
 
 
-
+Noisy Audio | Clean Audio
+--|--
+<img src="https://user-images.githubusercontent.com/39479994/215962178-ac55e72c-e13f-4264-9fd2-9820c52bbc83.mp4" width="600" />|<img src="https://user-images.githubusercontent.com/39479994/215962236-3e22642f-0963-4b12-b88b-86ab0b4fdc28.mp4" width="600" />
 
 Contact Info : neeleshverma13@gmail.com
